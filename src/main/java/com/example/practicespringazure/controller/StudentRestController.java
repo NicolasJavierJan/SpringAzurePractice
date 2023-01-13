@@ -35,4 +35,6 @@ public class StudentRestController {
         List<Student> lst = studentRepository.findAll();
         return lst;
     }
+
+
 }
