@@ -29,4 +29,10 @@ public class StudentRestController {
         studentRepository.save(st);
         return lst;
     }
+
+    @GetMapping("/")
+    public List<Student> rootStudent(){
+        List<Student> lst = studentRepository.findAll();
+        return lst;
+    }
 }
